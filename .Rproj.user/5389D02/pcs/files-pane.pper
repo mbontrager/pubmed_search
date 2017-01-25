@@ -1,0 +1,9 @@
+{
+    "path" : "~/Dropbox/Tempus/compbio/patient_pubmed_search",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

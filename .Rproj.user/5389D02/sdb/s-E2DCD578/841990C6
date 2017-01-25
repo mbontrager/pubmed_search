@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# PUBMED functions\n\n# Get PUBMED data given search elements\nget.pubmed.data = function(search.elements){\n    require(RISmed)\n    res = EUtilsSummary(search.elements)\n    res_records = EUtilsGet(res)\n    res = data.frame(PMID(res_records),\n                           YearPubmed(res_records),          \n                           Title(res_records),\n                           ArticleTitle(res_records),\n                           AbstractText(res_records),\n                           Affiliation(res_records), \n                     stringsAsFactors = FALSE)\n    \n    colnames(res) = c(\"PMID\",\n                      \"Year\",\n                      \"Title\",\n                      \"ArticleTitle\",\n                      \"AbstractText\",\n                      \"Affiliation\")\n    return(res)\n}\n",
+    "created" : 1485362427196.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2964485729",
+    "id" : "841990C6",
+    "lastKnownWriteTime" : 1485360910,
+    "last_content_update" : 1485360910,
+    "path" : "~/Dropbox/Tempus/compbio/patient_pubmed_search/pubmed_functions.R",
+    "project_path" : "pubmed_functions.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

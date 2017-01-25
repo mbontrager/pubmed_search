@@ -1,0 +1,11 @@
+name: pubmed_search
+title: pubmed_search
+account: mbontrager
+server: shinyapps.io
+appId: 153149
+bundleId: 690759
+url: https://mbontrager.shinyapps.io/pubmed_search/
+when: 1485364314.26667
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: pubmed_functions.R
